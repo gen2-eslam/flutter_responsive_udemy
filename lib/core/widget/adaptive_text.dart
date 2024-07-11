@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gen_extension/gen_extension.dart';
 
-class AdaptiveText extends Text {
-  const AdaptiveText(
-    super.data, {
+class AdaptiveText extends StatelessWidget {
+  const AdaptiveText({
     super.key,
     required this.text,
     required this.fontSize,
