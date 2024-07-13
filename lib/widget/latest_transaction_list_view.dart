@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_ui_udemy/core/services/custom_scroll_behavior.dart';
 import 'package:responsive_ui_udemy/core/utils/app_images.dart';
 import 'package:responsive_ui_udemy/model/user_info_model.dart';
 import 'package:responsive_ui_udemy/widget/user_info_list_tile.dart';
@@ -25,17 +26,37 @@ class LatestTansactionListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 80,
-      child: ListView.builder(
-        itemCount: users.length,
+    return ScrollConfiguration(
+      behavior: MyCustomScrollBehavior(),
+      child: SingleChildScrollView(
+        controller: ScrollController(),
+        physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
-        itemBuilder: (context, index) => IntrinsicWidth(
-          child: UserInfoListTile(
-            model: users[index],
-          ),
+        child: Row(
+          mainAxisSize: MainAxisSize.max,
+          children: users
+              .map(
+                (e) => IntrinsicWidth(
+                  child: UserInfoListTile(
+                    model: e,
+                  ),
+                ),
+              )
+              .toList(),
         ),
       ),
     );
+    // return SizedBox(
+    //   height: 80,
+    //   child: ListView.builder(
+    //     itemCount: users.length,
+    //     scrollDirection: Axis.horizontal,
+    //     itemBuilder: (context, index) => IntrinsicWidth(
+    //       child: UserInfoListTile(
+    //         model: users[index],
+    //       ),
+    //     ),
+    //   ),
+    // );
   }
 }

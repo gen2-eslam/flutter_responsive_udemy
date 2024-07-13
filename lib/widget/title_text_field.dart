@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_ui_udemy/core/utils/app_styles.dart';
-import 'package:responsive_ui_udemy/widget/latest_transaction_list_view.dart';
+import 'package:responsive_ui_udemy/widget/custom_text_field.dart';
 
-class LatestTransction extends StatelessWidget {
-  const LatestTransction({super.key});
+class TitleTextField extends StatelessWidget {
+  final String title, hint;
+  const TitleTextField({super.key, required this.title, required this.hint});
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Text(
-          'Latest Transactions',
+          title,
           style: AppStyles.styleMedium16,
         ),
-        SizedBox(
+        const SizedBox(
           height: 12,
         ),
-        LatestTansactionListView(),
+        CustomTextField(hint: hint),
       ],
     );
   }

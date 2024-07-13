@@ -48,10 +48,10 @@ class _AllExpensessItemListViewState extends State<AllExpensessItemListView> {
                 : EdgeInsets.zero,
             child: GestureDetector(
               onTap: () {
-                if(isActive != index){
+                if (isActive != index) {
                   setState(() {
-                  isActive = index;
-                });
+                    isActive = index;
+                  });
                 }
               },
               child: AllExpensessItem(

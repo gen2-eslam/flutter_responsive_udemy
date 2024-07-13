@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_ui_udemy/widget/all_Expensess_and_quick_invoice_section.dart';
 import 'package:responsive_ui_udemy/widget/all_expensess.dart';
+import 'package:responsive_ui_udemy/widget/custom_container.dart';
 import 'package:responsive_ui_udemy/widget/custom_drawer.dart';
+import 'package:responsive_ui_udemy/widget/my_card.dart';
 import 'package:responsive_ui_udemy/widget/quick_invoice.dart';
 
 class DashbordDesktopLayout extends StatelessWidget {
@@ -19,19 +22,20 @@ class DashbordDesktopLayout extends StatelessWidget {
         ),
         Expanded(
           flex: 3,
-          child: Column(
-            children: [
-              AllExpensess(),
-              SizedBox(
-                height: 24,
-              ),
-              QuickInvoice(),
-            ],
-          ),
+          child: AllExpensessAndQuickInvoiceSection(),
         ),
         Expanded(
           flex: 2,
-          child: SizedBox(),
+          child: CustomContainer(
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 40,
+                ),
+                MyCard(),
+              ],
+            ),
+          ),
         ),
       ],
     );
