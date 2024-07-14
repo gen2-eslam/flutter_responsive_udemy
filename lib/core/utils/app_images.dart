@@ -52,5 +52,7 @@ class Assets {
   /// Assets for imagesWallet
   /// assets/images/wallet.svg
   static const String imagesWallet = "assets/images/wallet.svg";
+  //gallery.svg
+  static const String imagesGallery = "assets/images/gallery.svg";
 }
 
