@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:responsive_ui_udemy/widget/all_expensess.dart';
 import 'package:responsive_ui_udemy/widget/quick_invoice.dart';
+=======
+import 'package:responsive_ui/widget/all_expensess.dart';
+import 'package:responsive_ui/widget/quick_invoice.dart';
+>>>>>>> 38cb535 (fix vertion)
 
 class AllExpensessAndQuickInvoiceSection extends StatelessWidget {
   const AllExpensessAndQuickInvoiceSection({

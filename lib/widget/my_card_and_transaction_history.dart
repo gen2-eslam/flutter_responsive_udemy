@@ -1,8 +1,19 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:responsive_ui_udemy/core/utils/app_styles.dart';
 import 'package:responsive_ui_udemy/widget/custom_container.dart';
 import 'package:responsive_ui_udemy/widget/my_card.dart';
 import 'package:responsive_ui_udemy/widget/my_card_page_view_with_dots_indecator.dart';
+=======
+import 'package:responsive_ui/core/utils/app_styles.dart';
+import 'package:responsive_ui/core/utils/color_manager.dart';
+import 'package:responsive_ui/widget/custom_container.dart';
+import 'package:responsive_ui/widget/latest_transaction_list_view.dart';
+import 'package:responsive_ui/widget/my_card.dart';
+import 'package:responsive_ui/widget/my_card_page_view_with_dots_indecator.dart';
+import 'package:responsive_ui/widget/transaction_history_header.dart';
+import 'package:responsive_ui/widget/transaction_history_list_view.dart';
+>>>>>>> 38cb535 (fix vertion)
 
 class MyCardAndTransactionHistory extends StatelessWidget {
   const MyCardAndTransactionHistory({
@@ -26,8 +37,47 @@ class MyCardAndTransactionHistory extends StatelessWidget {
             height: 20,
           ),
           MyCardPageViewWithDotsIndecator(),
+<<<<<<< HEAD
+=======
+          Divider(
+            height: 40,
+          ),
+          TransactionHistory()
+>>>>>>> 38cb535 (fix vertion)
         ],
       ),
     );
   }
 }
+<<<<<<< HEAD
+=======
+
+class TransactionHistory extends StatelessWidget {
+  const TransactionHistory({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const TransactionHistoryHeader(),
+        const SizedBox(
+          height: 20,
+        ),
+        Text(
+          "13 April 2022",
+          style: AppStyles.styleMedium16.copyWith(
+            color: ColorManager.grey,
+          ),
+        ),
+        const SizedBox(
+          height: 20,
+        ),
+        const TransactionHistoryListView(),
+      ],
+    );
+  }
+}
+>>>>>>> 38cb535 (fix vertion)

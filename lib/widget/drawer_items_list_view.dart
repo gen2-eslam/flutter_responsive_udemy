@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:responsive_ui_udemy/core/utils/app_images.dart';
 import 'package:responsive_ui_udemy/model/drawer_item_model.dart';
 import 'package:responsive_ui_udemy/widget/drawer_item.dart';
+=======
+import 'package:responsive_ui/core/utils/app_images.dart';
+import 'package:responsive_ui/model/drawer_item_model.dart';
+import 'package:responsive_ui/widget/drawer_item.dart';
+>>>>>>> 38cb535 (fix vertion)
 
 class DrawerItemsListView extends StatefulWidget {
   const DrawerItemsListView({

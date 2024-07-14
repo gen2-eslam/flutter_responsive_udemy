@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_ui_udemy/core/services/custom_scroll_behavior.dart';
-import 'package:responsive_ui_udemy/widget/custom_dot_indecator.dart';
-import 'package:responsive_ui_udemy/widget/dots_indecator.dart';
-import 'package:responsive_ui_udemy/widget/my_card.dart';
+
+import 'package:responsive_ui/core/services/custom_scroll_behavior.dart';
+import 'package:responsive_ui/widget/custom_dot_indecator.dart';
+import 'package:responsive_ui/widget/dots_indecator.dart';
+import 'package:responsive_ui/widget/my_card.dart';
 
 class MyCardPageViewWithDotsIndecator extends StatefulWidget {
   const MyCardPageViewWithDotsIndecator({super.key});

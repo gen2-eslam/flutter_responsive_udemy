@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:responsive_ui_udemy/core/utils/color_manager.dart';
 import 'package:responsive_ui_udemy/widget/custom_button.dart';
 import 'package:responsive_ui_udemy/widget/title_text_field.dart';
+=======
+import 'package:responsive_ui/core/utils/color_manager.dart';
+import 'package:responsive_ui/widget/custom_button.dart';
+import 'package:responsive_ui/widget/title_text_field.dart';
+>>>>>>> 38cb535 (fix vertion)
 
 class QuickInvoiceForm extends StatelessWidget {
   const QuickInvoiceForm({super.key});

@@ -1,6 +1,10 @@
 
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:responsive_ui_udemy/widget/custom_dot_indecator.dart';
+=======
+import 'package:responsive_ui/widget/custom_dot_indecator.dart';
+>>>>>>> 38cb535 (fix vertion)
 
 class DotsIndecator extends StatelessWidget {
   const DotsIndecator({

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_ui_udemy/core/utils/app_styles.dart';
-import 'package:responsive_ui_udemy/core/utils/color_manager.dart';
-import 'package:responsive_ui_udemy/model/all_expensess_item_model.dart';
-import 'package:responsive_ui_udemy/widget/all_expensess_item_header.dart';
+
+import 'package:responsive_ui/core/utils/app_styles.dart';
+import 'package:responsive_ui/core/utils/color_manager.dart';
+import 'package:responsive_ui/model/all_expensess_item_model.dart';
+import 'package:responsive_ui/widget/all_expensess_item_header.dart';
 
 class InActiveAllExpensessItem extends StatelessWidget {
   final AllExpensesItemModel allExpensesItemModel;

@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:responsive_ui_udemy/core/services/custom_scroll_behavior.dart';
 import 'package:responsive_ui_udemy/core/utils/app_images.dart';
 import 'package:responsive_ui_udemy/model/user_info_model.dart';
 import 'package:responsive_ui_udemy/widget/user_info_list_tile.dart';
+=======
+import 'package:responsive_ui/core/services/custom_scroll_behavior.dart';
+import 'package:responsive_ui/core/utils/app_images.dart';
+import 'package:responsive_ui/model/user_info_model.dart';
+import 'package:responsive_ui/widget/user_info_list_tile.dart';
+>>>>>>> 38cb535 (fix vertion)
 
 class LatestTansactionListView extends StatelessWidget {
   static List<UserInfoModel> users = [

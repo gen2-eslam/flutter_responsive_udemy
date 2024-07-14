@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name": "responsive_ui_udemy",
     "short_name": "responsive_ui_udemy",
+=======
+    "name": "responsive_ui",
+    "short_name": "responsive_ui",
+>>>>>>> 38cb535 (fix vertion)
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
