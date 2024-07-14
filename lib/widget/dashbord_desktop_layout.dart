@@ -33,7 +33,6 @@ class DashbordDesktopLayout extends StatelessWidget {
         ),
         Expanded(
           flex: 2,
-
           child: SingleChildScrollView(
             child: Column(
               children: [

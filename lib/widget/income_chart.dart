@@ -7,27 +7,34 @@ class IncomeChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return PieChart(getChartData());
+    return PieChart(
+      getChartData(),
+    );
   }
 
   PieChartData getChartData() {
     return PieChartData(
+      sectionsSpace: 0,
       sections: [
         PieChartSectionData(
           color: ColorManager.blue,
           value: 40,
+          showTitle: false,
         ),
         PieChartSectionData(
           color: ColorManager.lightBlue,
           value: 25,
+          showTitle: false,
         ),
         PieChartSectionData(
           color: ColorManager.darkBlue,
           value: 20,
+          showTitle: false,
         ),
         PieChartSectionData(
           color: ColorManager.grey,
           value: 22,
+          showTitle: false,
         ),
       ],
     );

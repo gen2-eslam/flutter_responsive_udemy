@@ -1,20 +1,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-<<<<<<< HEAD
-        android:label="responsive_ui_udemy"
-=======
+
         android:label="responsive_ui"
->>>>>>> 38cb535 (fix vertion)
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
-<<<<<<< HEAD
-=======
+
             android:taskAffinity=""
->>>>>>> 38cb535 (fix vertion)
             android:theme="@style/LaunchTheme"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
@@ -38,8 +33,6 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
-<<<<<<< HEAD
-=======
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and
          https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
@@ -51,5 +44,4 @@
             <data android:mimeType="text/plain"/>
         </intent>
     </queries>
->>>>>>> 38cb535 (fix vertion)
 </manifest>

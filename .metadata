@@ -4,11 +4,8 @@
 # This file should be version controlled and should not be manually edited.
 
 version:
-<<<<<<< HEAD
-  revision: "12fccda598477eddd19f93040a1dba24f915b9be"
-=======
+
   revision: "761747bfc538b5af34aa0d3fac380f1bc331ec49"
->>>>>>> 38cb535 (fix vertion)
   channel: "stable"
 
 project_type: app
@@ -17,28 +14,7 @@ project_type: app
 migration:
   platforms:
     - platform: root
-<<<<<<< HEAD
-      create_revision: 12fccda598477eddd19f93040a1dba24f915b9be
-      base_revision: 12fccda598477eddd19f93040a1dba24f915b9be
-    - platform: android
-      create_revision: 12fccda598477eddd19f93040a1dba24f915b9be
-      base_revision: 12fccda598477eddd19f93040a1dba24f915b9be
-    - platform: ios
-      create_revision: 12fccda598477eddd19f93040a1dba24f915b9be
-      base_revision: 12fccda598477eddd19f93040a1dba24f915b9be
-    - platform: linux
-      create_revision: 12fccda598477eddd19f93040a1dba24f915b9be
-      base_revision: 12fccda598477eddd19f93040a1dba24f915b9be
-    - platform: macos
-      create_revision: 12fccda598477eddd19f93040a1dba24f915b9be
-      base_revision: 12fccda598477eddd19f93040a1dba24f915b9be
-    - platform: web
-      create_revision: 12fccda598477eddd19f93040a1dba24f915b9be
-      base_revision: 12fccda598477eddd19f93040a1dba24f915b9be
-    - platform: windows
-      create_revision: 12fccda598477eddd19f93040a1dba24f915b9be
-      base_revision: 12fccda598477eddd19f93040a1dba24f915b9be
-=======
+
       create_revision: 761747bfc538b5af34aa0d3fac380f1bc331ec49
       base_revision: 761747bfc538b5af34aa0d3fac380f1bc331ec49
     - platform: android
@@ -59,7 +35,6 @@ migration:
     - platform: windows
       create_revision: 761747bfc538b5af34aa0d3fac380f1bc331ec49
       base_revision: 761747bfc538b5af34aa0d3fac380f1bc331ec49
->>>>>>> 38cb535 (fix vertion)
 
   # User provided section
 

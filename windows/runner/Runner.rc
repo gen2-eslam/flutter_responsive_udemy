@@ -90,21 +90,13 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-<<<<<<< HEAD
-            VALUE "FileDescription", "responsive_ui_udemy" "\0"
-            VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "responsive_ui_udemy" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "responsive_ui_udemy.exe" "\0"
-            VALUE "ProductName", "responsive_ui_udemy" "\0"
-=======
+
             VALUE "FileDescription", "responsive_ui" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
             VALUE "InternalName", "responsive_ui" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
             VALUE "OriginalFilename", "responsive_ui.exe" "\0"
             VALUE "ProductName", "responsive_ui" "\0"
->>>>>>> 38cb535 (fix vertion)
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

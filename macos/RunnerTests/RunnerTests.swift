@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-import FlutterMacOS
-import Cocoa
-=======
+
 import Cocoa
 import FlutterMacOS
->>>>>>> 38cb535 (fix vertion)
 import XCTest
 
 class RunnerTests: XCTestCase {

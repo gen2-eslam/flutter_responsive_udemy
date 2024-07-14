@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-# responsive_ui_udemy
-=======
+
 # responsive_ui
->>>>>>> 38cb535 (fix vertion)
 
 A new Flutter project.
 

@@ -18,7 +18,7 @@ class IncomeView extends StatelessWidget {
           IncomeHeader(),
           Row(
             children: [
-              IncomeChart(),
+              SizedBox(width: 200, height: 200, child: IncomeChart()),
             ],
           ),
         ],
