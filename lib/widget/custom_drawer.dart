@@ -1,19 +1,11 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-import 'package:responsive_ui_udemy/core/utils/app_images.dart';
-import 'package:responsive_ui_udemy/model/drawer_item_model.dart';
-import 'package:responsive_ui_udemy/model/user_info_model.dart';
-import 'package:responsive_ui_udemy/widget/drawer_items_list_view.dart';
-import 'package:responsive_ui_udemy/widget/not_active_list_tile.dart';
-import 'package:responsive_ui_udemy/widget/user_info_list_tile.dart';
-=======
+
 import 'package:responsive_ui/core/utils/app_images.dart';
 import 'package:responsive_ui/model/drawer_item_model.dart';
 import 'package:responsive_ui/model/user_info_model.dart';
 import 'package:responsive_ui/widget/drawer_items_list_view.dart';
 import 'package:responsive_ui/widget/not_active_list_tile.dart';
 import 'package:responsive_ui/widget/user_info_list_tile.dart';
->>>>>>> 38cb535 (fix vertion)
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});

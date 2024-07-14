@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-<<<<<<< HEAD
-import 'package:responsive_ui_udemy/core/utils/app_styles.dart';
-import 'package:responsive_ui_udemy/core/utils/color_manager.dart';
-import 'package:responsive_ui_udemy/model/user_info_model.dart';
-=======
+
 import 'package:responsive_ui/core/utils/app_styles.dart';
 import 'package:responsive_ui/core/utils/color_manager.dart';
 import 'package:responsive_ui/model/user_info_model.dart';
->>>>>>> 38cb535 (fix vertion)
 
 class UserInfoListTile extends StatelessWidget {
   final UserInfoModel model;

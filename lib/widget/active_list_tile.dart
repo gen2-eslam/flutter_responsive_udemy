@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-<<<<<<< HEAD
-import 'package:responsive_ui_udemy/core/utils/app_styles.dart';
-import 'package:responsive_ui_udemy/core/utils/color_manager.dart';
-import 'package:responsive_ui_udemy/model/drawer_item_model.dart';
-=======
+
 import 'package:responsive_ui/core/utils/app_styles.dart';
 import 'package:responsive_ui/core/utils/color_manager.dart';
 import 'package:responsive_ui/model/drawer_item_model.dart';
->>>>>>> 38cb535 (fix vertion)
 
 class ActiveListTile extends StatelessWidget {
   const ActiveListTile({

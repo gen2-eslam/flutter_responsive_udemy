@@ -1,10 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-import 'package:responsive_ui_udemy/view/dashboard_view.dart';
-=======
 import 'package:responsive_ui/view/dashboard_view.dart';
->>>>>>> 38cb535 (fix vertion)
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-import 'package:responsive_ui_udemy/core/utils/app_styles.dart';
-import 'package:responsive_ui_udemy/widget/custom_container.dart';
-import 'package:responsive_ui_udemy/widget/my_card.dart';
-import 'package:responsive_ui_udemy/widget/my_card_page_view_with_dots_indecator.dart';
-=======
+
 import 'package:responsive_ui/core/utils/app_styles.dart';
 import 'package:responsive_ui/core/utils/color_manager.dart';
 import 'package:responsive_ui/widget/custom_container.dart';
@@ -13,7 +8,6 @@ import 'package:responsive_ui/widget/my_card.dart';
 import 'package:responsive_ui/widget/my_card_page_view_with_dots_indecator.dart';
 import 'package:responsive_ui/widget/transaction_history_header.dart';
 import 'package:responsive_ui/widget/transaction_history_list_view.dart';
->>>>>>> 38cb535 (fix vertion)
 
 class MyCardAndTransactionHistory extends StatelessWidget {
   const MyCardAndTransactionHistory({
@@ -37,20 +31,18 @@ class MyCardAndTransactionHistory extends StatelessWidget {
             height: 20,
           ),
           MyCardPageViewWithDotsIndecator(),
-<<<<<<< HEAD
-=======
+
           Divider(
             height: 40,
           ),
           TransactionHistory()
->>>>>>> 38cb535 (fix vertion)
+
         ],
       ),
     );
   }
 }
-<<<<<<< HEAD
-=======
+
 
 class TransactionHistory extends StatelessWidget {
   const TransactionHistory({
@@ -80,4 +72,3 @@ class TransactionHistory extends StatelessWidget {
     );
   }
 }
->>>>>>> 38cb535 (fix vertion)
