@@ -22,7 +22,7 @@ class ActiveListTile extends StatelessWidget {
       leading: SvgPicture.asset(drawerItemModel.image),
       title: Text(
         drawerItemModel.title,
-        style: AppStyles.styleSemiBold16,
+        style: AppStyles.styleSemiBold16(context),
       ),
       trailing: const VerticalDivider(
         thickness: 2,

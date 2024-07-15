@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:responsive_ui/core/utils/app_images.dart';
@@ -12,7 +14,6 @@ class MyCard extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 420 / 215,
       child: Container(
-        
         decoration: BoxDecoration(
           image: const DecorationImage(
             image: AssetImage(
@@ -31,13 +32,13 @@ class MyCard extends StatelessWidget {
                   const EdgeInsets.only(left: 31, right: 42, top: 16),
               title: Text(
                 "Name Card",
-                style: AppStyles.styleRegular16.copyWith(
+                style: AppStyles.styleRegular16(context).copyWith(
                   color: Colors.white,
                 ),
               ),
               subtitle: Text(
                 "Name Card",
-                style: AppStyles.styleMedium20.copyWith(
+                style: AppStyles.styleMedium20(context).copyWith(
                   color: Colors.white,
                 ),
               ),
@@ -51,10 +52,12 @@ class MyCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Text(
-                    "0918 8124 0042 8129",
-                    style: AppStyles.styleSemiBold24.copyWith(
-                      color: ColorManager.white,
+                  FittedBox(
+                    child: Text(
+                      "0918 8124 0042 8129",
+                      style: AppStyles.styleSemiBold24(context).copyWith(
+                        color: ColorManager.white,
+                      ),
                     ),
                   ),
                   const SizedBox(
@@ -62,15 +65,17 @@ class MyCard extends StatelessWidget {
                   ),
                   Text(
                     "12/20 - 124",
-                    style: AppStyles.styleRegular16.copyWith(
+                    style: AppStyles.styleRegular16(context).copyWith(
                       color: ColorManager.white,
                     ),
                   ),
                 ],
               ),
             ),
-            const SizedBox(
-              height: 27,
+            const Flexible(
+              child: SizedBox(
+                height: 27,
+              ),
             ),
           ],
         ),

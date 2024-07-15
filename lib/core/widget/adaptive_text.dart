@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gen_extension/gen_extension.dart';
+import 'package:responsive_ui/core/utils/size_config.dart';
 
 class AdaptiveText extends StatelessWidget {
   const AdaptiveText({
@@ -58,9 +59,9 @@ double getResponsiveTextSize(
 
 double getScaleFactor(BuildContext context) {
   double width = context.deviceWidth;
-  if (width < 600) {
+  if (width < SizeConfig.tablet) {
     return width / 400;
-  } else if (width < 900) {
+  } else if (width < SizeConfig.desktop) {
     return width / 700;
   } else {
     return width / 1000;

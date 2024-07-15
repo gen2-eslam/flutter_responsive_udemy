@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:responsive_ui/core/utils/app_styles.dart';
 import 'package:responsive_ui/core/utils/color_manager.dart';
@@ -13,14 +12,14 @@ class TransactionHistoryHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Text(
+        Text(
           "Transaction History",
-          style: AppStyles.styleMedium20,
+          style: AppStyles.styleMedium20(context),
         ),
         const Spacer(),
         Text(
           "See all",
-          style: AppStyles.styleMedium16.copyWith(
+          style: AppStyles.styleMedium16(context).copyWith(
             color: ColorManager.blue,
           ),
         ),

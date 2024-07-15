@@ -17,30 +17,24 @@ class MyCardAndTransactionHistory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomContainer(
+    return CustomContainer(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(
-            height: 40,
-          ),
           Text(
             "MyCard",
-            style: AppStyles.styleSemiBold20,
+            style: AppStyles.styleSemiBold20(context),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          MyCardPageViewWithDotsIndecator(),
-
-          Divider(
+          const MyCardPageViewWithDotsIndecator(),
+          const Divider(
             height: 40,
           ),
-          TransactionHistory()
-
+          const TransactionHistory()
         ],
       ),
     );
   }
 }
-

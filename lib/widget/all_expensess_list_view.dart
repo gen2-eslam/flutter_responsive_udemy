@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_ui/core/services/custom_scroll_behavior.dart';
 import 'package:responsive_ui/core/utils/app_images.dart';
 import 'package:responsive_ui/model/all_expensess_item_model.dart';
+import 'package:responsive_ui/widget/active_all_expensess_item_small_dev.dart';
 import 'package:responsive_ui/widget/all_expensess_item.dart';
 
 class AllExpensessItemListView extends StatefulWidget {
@@ -36,32 +38,49 @@ class _AllExpensessItemListViewState extends State<AllExpensessItemListView> {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: allExpensesItemModel.asMap().entries.map((e) {
-        int index = e.key;
-        AllExpensesItemModel allExpensesItemModel = e.value;
+    double width = MediaQuery.of(context).size.width;
+    return width >= 480
+        ? Row(
+            children: allExpensesItemModel.asMap().entries.map((e) {
+              int index = e.key;
+              AllExpensesItemModel allExpensesItemModel = e.value;
 
-        return Expanded(
-          child: Padding(
-            padding: index == 1
-                ? const EdgeInsets.symmetric(horizontal: 12)
-                : EdgeInsets.zero,
-            child: GestureDetector(
-              onTap: () {
-                if (isActive != index) {
-                  setState(() {
-                    isActive = index;
-                  });
-                }
-              },
-              child: AllExpensessItem(
-                allExpensesItemModel: allExpensesItemModel,
-                isSelected: index == isActive,
+              return Expanded(
+                child: Padding(
+                  padding: index == 1
+                      ? const EdgeInsets.symmetric(horizontal: 12)
+                      : EdgeInsets.zero,
+                  child: GestureDetector(
+                    onTap: () {
+                      if (isActive != index) {
+                        setState(() {
+                          isActive = index;
+                        });
+                      }
+                    },
+                    child: AllExpensessItem(
+                      allExpensesItemModel: allExpensesItemModel,
+                      isSelected: index == isActive,
+                    ),
+                  ),
+                ),
+              );
+            }).toList(),
+          )
+        : AspectRatio(
+            aspectRatio: 2 / 1,
+            child: ScrollConfiguration(
+              behavior: MyCustomScrollBehavior(),
+              child: PageView.builder(
+                physics: const BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                itemCount: allExpensesItemModel.length,
+                itemBuilder: (context, index) =>
+                    ActiveAllExpensessItemSmallDevice(
+                  allExpensesItemModel: allExpensesItemModel[index],
+                ),
               ),
             ),
-          ),
-        );
-      }).toList(),
-    );
+          );
   }
 }
